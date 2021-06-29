@@ -5,33 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather-App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-  <div class="bodyimg">
-    <div class="app-warp">
-      <header>
-        <div class="bgcolor"></div>
-        <input
-          type="text"
-          autocomplete="off"
-          class="search-box"
-          placeholder="Enter a city lol..."
-        />
-      </header>
-      <main class="main_text">
-        <section class="location">
-          <div class="city">Northampton, GB</div>
-          <div class="date">Thursday, 14 January 2021</div>
-        </section>
-        <div class="current">
-          <div class="temp">15<span>­°</span></div>
-          <div class="weather">Sunny</div>
-          <div class="hi-low">13°c / 16°c</div>
+    <header class="header">
+      <h1 class="header__title">Welcome to Weather</h1>
+    </header>
+    <section>
+      <div class="bodyimg">
+        <div class="app-warp">
+          <main class="main_text">
+            <section class="location">
+              <input
+                type="text"
+                autocomplete="off"
+                class="search-box"
+                placeholder="Enter a city lol..."
+              />
+              <div class="city">Northampton, GB</div>
+              <div class="date">Thursday, 14 January 2021</div>
+            </section>
+            <div class="current">
+              <div class="temp">15<span>­°</span></div>
+              <div class="weather">Sunny</div>
+              <div class="hi-low">13°c / 16°c</div>
+            </div>
+          </main>
         </div>
-      </main>
-    </div>
-    <script src="app.js"></script>
-  </div>
+        <script src="app.js"></script>
+      </div>
+    </section>
   </body>
 </html>
